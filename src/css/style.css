@@ -3,9 +3,26 @@ body {
   font-family: sans-serif;
 }
 
+img {
+  max-width: 100%;
+}
+
 .container {
   width: 1170px;
   margin: 0 auto;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    width: 760px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 580px;
+    width: 95%;
+  }
 }
 
 .button {
@@ -65,4 +82,18 @@ body {
 .navbar__button {
   font-size: 13px;
   margin-left: 30px;
+}
+
+@media (max-width: 768px) {
+  .navbar__logo {
+    width: 91px;
+  }
+  .navbar__contacts {
+    display: none;
+  }
+  .navbar__button {
+    font-size: 10px;
+    border-radius: 5px;
+    padding: 12px 25px;
+  }
 }
