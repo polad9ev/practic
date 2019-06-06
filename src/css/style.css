@@ -29,7 +29,6 @@ img {
   border-radius: 10px;
   background-color: #ffd200;
   border: none;
-  padding: 18px 34px;
   color: #333333;
 }
 
@@ -82,6 +81,7 @@ img {
 .navbar__button {
   font-size: 13px;
   margin-left: 30px;
+  padding: 18px 34px;
 }
 
 @media (max-width: 768px) {
