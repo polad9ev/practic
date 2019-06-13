@@ -9,7 +9,6 @@
     max-width: 580px
     width: 87%
 
-
 *
   box-sizing: border-box
 
@@ -27,7 +26,6 @@ body
 img 
   max-width: 100%
 
-
 .button
   +bold
   border-radius: 10px
@@ -42,7 +40,6 @@ img
   &:active
     background-color: lighten($main-color, 22%)
     box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.15)
-
 
 .section
   padding-top: 76px
@@ -64,8 +61,11 @@ img
     &-subtitle
       font-size: 14px
     
-
 .input
   border: 1px solid $border-input
   color: $input-text
   border-radius: 10px
+  background: transparent
+  &:focus
+    border-color: $main-color
+    box-shadow: 0px 0px 1px 1px rgba(247,255,0,1)
