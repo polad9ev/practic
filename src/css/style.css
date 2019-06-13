@@ -79,7 +79,7 @@ img {
 }
 
 .section {
-  padding-top: 74px;
+  padding-top: 76px;
   padding-bottom: 82px;
 }
 
@@ -338,17 +338,17 @@ img {
 .offer__title {
   line-height: 35px;
   max-width: 350px;
-  margin-bottom: 15px;
+  margin-bottom: 19px;
 }
 
 .offer__subtitle {
   max-width: 235px;
-  margin-bottom: 26px;
+  margin-bottom: 31px;
 }
 
 .offer__input {
   width: 240px;
-  padding: 20px 26px;
+  padding: 22px 26px;
   margin-bottom: 30px;
 }
 
