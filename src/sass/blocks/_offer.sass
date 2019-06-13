@@ -1,10 +1,9 @@
 .offer
   background: url('../img/offer-bg.png') no-repeat
   background-position: center right
-  // background-size: contain
   position: relative
   &::before
-    content: ''
+    content: ' '
     width: 50%
     height: 100%
     position: absolute
@@ -16,7 +15,6 @@
     padding-right: 90px
     position: relative
   &__title
-    line-height: 35px
     max-width: 350px
     margin-bottom: 19px
   &__subtitle
@@ -32,6 +30,24 @@
     width: 100%
     padding: 27px 0
     min-height: 70px
+    margin-bottom: 10px
+  .note
+    display: flex
+    justify-content: space-between
+    &__text
+      font-size: 15px
+      line-height: 24px
+      &:first-child
+        max-width: 240px
+      &:last-child
+        max-width: 210px
+      a
+        +bold
+        display: block
+        text-decoration: none
+        color: $text-color
+        
+                                                                                           // adaptive
 @media (max-width: 1200px)
   .offer
     background-size: cover
@@ -47,3 +63,17 @@
     &-block
       width: 100%
       padding-right: 0
+    &__title
+      margin-bottom: 16px
+    &__subtitle
+      margin-bottom: 27px
+    &__input
+      margin-bottom: 10px
+    &__button
+      padding: 20px 63px
+      margin-bottom: 20px
+    .note
+      flex-direction: column
+      &__text
+        margin-left: 6px
+        margin-bottom: 6px

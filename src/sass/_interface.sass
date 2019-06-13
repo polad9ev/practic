@@ -13,7 +13,7 @@
 *
   box-sizing: border-box
 
-h1,h2,h3,h4,h5,h6
+h1,h2,h3,h4,h5,h6,p
   padding: 0
   margin: 0
 
@@ -50,9 +50,20 @@ img
   &-title
     +bold
     font-size: 24px
+    line-height: 35px
   &-subtitle
     font-size: 16px
     display: block
+@media (max-width: 768px)
+  .section
+    padding-top: 50px
+    padding-bottom: 45px
+    &-title
+      font-size: 18px
+      line-height: normal
+    &-subtitle
+      font-size: 14px
+    
 
 .input
   border: 1px solid $border-input

@@ -37,7 +37,7 @@
           box-sizing: border-box;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, p {
   padding: 0;
   margin: 0;
 }
@@ -86,11 +86,26 @@ img {
 .section-title {
   font-family: 'Museo Sans Bold', sans-serif;
   font-size: 24px;
+  line-height: 35px;
 }
 
 .section-subtitle {
   font-size: 16px;
   display: block;
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding-top: 50px;
+    padding-bottom: 45px;
+  }
+  .section-title {
+    font-size: 18px;
+    line-height: normal;
+  }
+  .section-subtitle {
+    font-size: 14px;
+  }
 }
 
 .input {
@@ -230,9 +245,9 @@ img {
 }
 
 .hero-list__image {
-  -ms-flex-preferred-size: 36px;
-      flex-basis: 36px;
-  height: 36px;
+  -ms-flex-preferred-size: 40px;
+      flex-basis: 40px;
+  height: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -320,7 +335,7 @@ img {
 }
 
 .offer::before {
-  content: '';
+  content: ' ';
   width: 50%;
   height: 100%;
   position: absolute;
@@ -336,7 +351,6 @@ img {
 }
 
 .offer__title {
-  line-height: 35px;
   max-width: 350px;
   margin-bottom: 19px;
 }
@@ -360,6 +374,36 @@ img {
   width: 100%;
   padding: 27px 0;
   min-height: 70px;
+  margin-bottom: 10px;
+}
+
+.offer .note {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.offer .note__text {
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.offer .note__text:first-child {
+  max-width: 240px;
+}
+
+.offer .note__text:last-child {
+  max-width: 210px;
+}
+
+.offer .note__text a {
+  font-family: 'Museo Sans Bold', sans-serif;
+  display: block;
+  text-decoration: none;
+  color: #333333;
 }
 
 @media (max-width: 1200px) {
@@ -384,5 +428,28 @@ img {
   .offer-block {
     width: 100%;
     padding-right: 0;
+  }
+  .offer__title {
+    margin-bottom: 16px;
+  }
+  .offer__subtitle {
+    margin-bottom: 27px;
+  }
+  .offer__input {
+    margin-bottom: 10px;
+  }
+  .offer__button {
+    padding: 20px 63px;
+    margin-bottom: 20px;
+  }
+  .offer .note {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .offer .note__text {
+    margin-left: 6px;
+    margin-bottom: 6px;
   }
 }
