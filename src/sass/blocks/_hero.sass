@@ -1,7 +1,6 @@
 .hero
   padding-top: 47px
-  // padding-bottom: 52px
-  background-color: $bg-grey
+  background-color: $secondary
   &-block
     display: flex
     justify-content: space-between
@@ -46,8 +45,16 @@
   &-image
     margin-right: -40px
     max-width: 100%
+    img
+      // margin-right: 40px
 
 // ADAPTIVE
+  
+// bugfix ~1200-1253px
+@media (max-width: 1255px)
+  .hero
+    &-image
+      margin-right: -15px
 @media (max-width: 1200px)
   .hero
     &-block

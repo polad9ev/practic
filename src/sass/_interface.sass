@@ -1,3 +1,22 @@
+.container
+  width: 1170px
+  margin: 0 auto
+@media (max-width: 1200px) 
+  .container
+    width: 720px
+@media (max-width: 768px) 
+  .container
+    max-width: 580px
+    width: 87%
+
+
+*
+  box-sizing: border-box
+
+h1,h2,h3,h4,h5,h6
+  padding: 0
+  margin: 0
+
 body 
   color: $text-color
   +reg
@@ -8,16 +27,6 @@ body
 img 
   max-width: 100%
 
-.container
-  width: 1170px
-  margin: 0 auto
-@media (max-width: 1200px) 
-  .container
-    width: 760px
-@media (max-width: 768px) 
-  .container
-    max-width: 580px
-    width: 87%
 
 .button
   +bold
@@ -33,3 +42,19 @@ img
   &:active
     background-color: lighten($main-color, 22%)
     box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.15)
+
+
+.section
+  padding-top: 74px
+  padding-bottom: 82px
+  &-title
+    +bold
+    font-size: 24px
+  &-subtitle
+    font-size: 16px
+    display: block
+
+.input
+  border: 1px solid $border-input
+  color: $input-text
+  border-radius: 10px
