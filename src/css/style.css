@@ -481,12 +481,22 @@ img {
   width: 90%;
   max-width: 250px;
   padding: 40px;
-  background: #ffffff;
+  background: #ffd200;
+  border-radius: 10px;
   margin: auto;
 }
 
 .modal-dialog__close {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: -25px;
+  right: -25px;
+  border: none;
+  border-radius: 5px;
+  font-size: 25px;
+  color: #fff;
+  background: transparent;
+}
+
+.modal-dialog__close:hover {
+  cursor: pointer;
 }
