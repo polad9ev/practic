@@ -491,7 +491,6 @@ img {
   top: -25px;
   right: -25px;
   border: none;
-  border-radius: 5px;
   font-size: 25px;
   color: #fff;
   background: transparent;
@@ -499,4 +498,48 @@ img {
 
 .modal-dialog__close:hover {
   cursor: pointer;
+}
+
+.arrow {
+  position: fixed;
+  bottom: 50px;
+  left: 30px;
+  background: #ffffff;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 10px -5px;
+          box-shadow: 0 0 10px -5px;
+  opacity: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.arrow:hover {
+  background: #e6e6e6;
+  cursor: pointer;
+}
+
+.arrow__image {
+  width: 20px;
+}
+
+@media (max-width: 1200px) {
+  .arrow:hover {
+    background: white;
+    -webkit-box-shadow: 0 0 10px -5px;
+            box-shadow: 0 0 10px -5px;
+  }
+  .arrow:focus {
+    background: white;
+    -webkit-box-shadow: 0 0 10px -5px;
+            box-shadow: 0 0 10px -5px;
+  }
 }
