@@ -8,7 +8,7 @@ function removeModal() {
 
 button.addEventListener('click', function() {
   modal.classList.add('modal_active');
-  setTimeout(removeModal, 4000);
+  setTimeout(removeModal, 5000);
 });
 
 close.addEventListener('click', function () {
