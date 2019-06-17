@@ -472,9 +472,17 @@ img {
   background-size: 50%;
 }
 
+.portfolio .slider__image {
+  margin: auto;
+}
+
+.portfolio .slider__item {
+  margin: 0 10px;
+}
+
 .portfolio__title {
   font-size: 30px;
-  width: 600px;
+  max-width: 600px;
   margin: auto;
   margin-bottom: 99px;
 }
@@ -489,6 +497,17 @@ img {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-top: 68px;
+}
+
+@media (max-width: 768px) {
+  .portfolio {
+    padding: 42px 0 64px 0;
+    background: #f5f5f5;
+  }
+  .portfolio__title {
+    font-size: 18px;
+    margin-bottom: 42px;
+  }
 }
 
 .modal {
