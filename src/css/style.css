@@ -79,7 +79,7 @@ img {
 }
 
 .section {
-  padding-top: 76px;
+  padding-top: 746px;
   padding-bottom: 82px;
 }
 
@@ -536,11 +536,15 @@ img {
   }
 }
 
+.price {
+  padding: 90px 0;
+}
+
 .price__title {
   font-family: 'Museo Sans Bold', sans-serif;
   max-width: 520px;
   line-height: 45px;
-  margin-bottom: 52px;
+  margin-bottom: 48px;
 }
 
 .price__subtitle {
@@ -587,6 +591,10 @@ img {
   display: block;
 }
 
+.price .card:nth-last-child(-n+3) {
+  margin-bottom: 0;
+}
+
 .price .cards {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -599,7 +607,8 @@ img {
 }
 
 .price .card__title {
-  padding: 40px 0;
+  font-family: 'Museo Sans Bold', sans-serif;
+  padding: 40px 0 30px 0;
   font-size: 18px;
 }
 
@@ -607,6 +616,8 @@ img {
   display: inline-block;
   font-family: 'Museo Sans Bold', sans-serif;
   font-size: 16px;
+  text-decoration: none;
+  color: #333333;
   margin-bottom: 47px;
   position: relative;
 }
@@ -631,6 +642,77 @@ img {
 
 .price .card__link:hover:after {
   height: 12px;
+}
+
+@media (max-width: 1200px) {
+  .price .container {
+    width: 970px;
+  }
+  .price .cards {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .price .card {
+    width: 30%;
+  }
+}
+
+@media (max-width: 992px) {
+  .price .container {
+    width: 800px;
+    max-width: 90%;
+  }
+  .price .section-title {
+    font-size: 25px;
+  }
+  .price .section-subtitle {
+    font-size: 20px;
+  }
+  .price .card {
+    width: 45%;
+  }
+}
+
+@media (max-width: 650px) {
+  .price .container .section-title {
+    font-size: 20px;
+    line-height: 1.4;
+  }
+  .price .container .section-subtitle {
+    font-size: 15px;
+  }
+  .price .container .card {
+    width: 64%;
+  }
+}
+
+@media (max-width: 450px) {
+  .price {
+    padding-top: 44px;
+  }
+  .price .container {
+    max-width: 100%;
+  }
+  .price .container .section-title {
+    font-size: 18px;
+    line-height: 1.2;
+    width: 80%;
+    margin-bottom: 24px;
+  }
+  .price .container .section-subtitle {
+    font-size: 14px;
+  }
+  .price .container .card {
+    width: 84%;
+  }
+  .price .container .card__title {
+    font-size: 14px;
+    padding-top: 27px;
+    padding-bottom: 15px;
+  }
+  .price .container .card__link {
+    margin-bottom: 35px;
+  }
 }
 
 .modal {
