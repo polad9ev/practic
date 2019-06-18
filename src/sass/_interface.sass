@@ -45,12 +45,14 @@ img
   padding-top: 76px
   padding-bottom: 82px
   &-title
+    margin: 0 auto
     +bold
     text-align: center
-    font-size: 24px
+    font-size: 30px
     line-height: 35px
   &-subtitle
-    font-size: 16px
+    text-align: center
+    font-size: 20px
     display: block
 @media (max-width: 768px)
   .section
@@ -73,5 +75,7 @@ img
 
 .arrows 
   &__left, &__right
+    opacity: 0.7
     &:hover
+      opacity: 1
       cursor: pointer
