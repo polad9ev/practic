@@ -49,4 +49,6 @@ $(function() {
   });
 });
 
+// ANIMATE/wow.js
+new WOW().init();
 
