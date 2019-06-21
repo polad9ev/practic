@@ -1,7 +1,7 @@
 .features
-  padding-top: 30px
+  padding-top: 120px
   &__container
-    width: 1110px
+    max-width: 1110px
   &__plan
     padding-bottom: 97px
   .plan
@@ -40,3 +40,68 @@
 
   .noafter:after 
     display: none
+
+@media (max-width: 1200px)
+  .features
+    .plan
+      &__item
+        max-width: 120px
+      &__image
+        &:after
+          top: -35px
+          right: -62px
+@media (max-width: 768px)
+  .features
+    &__title
+      font-size: 25px
+      line-height: 1.2
+    &__subtitle
+      font-size: 16px
+    .plan
+      &__image
+        width: 80px
+        height: 80px
+        img
+          width: 40%
+          height: 40%
+      &__text
+        font-size: 13px
+@media (max-width: 650px)
+  .features
+    &__title
+      max-width: 500px
+      font-size: 20px
+      line-height: 1.2
+    &__subtitle
+      font-size: 15px
+    .plan
+      flex-direction: column
+      &__item
+        max-width: 50%
+        margin: 0 auto
+        margin-bottom: 30px
+      &__image
+        margin-bottom: 22px
+        width: 100px
+        height: 100px
+        &:after
+          display: none
+        img
+          width: 34px
+          height: 35px
+@media (max-width: 450px)
+  .features
+    padding-top: 20px
+    &__plan
+      padding-bottom: 53px
+    &__title
+      font-size: 18px
+      margin-bottom: 25px
+    &__subtitle
+      font-size: 14px
+      margin-bottom: 36px
+    .plan
+      &__image
+        margin-bottom: 18px
+      &__text
+        font-size: 12px
