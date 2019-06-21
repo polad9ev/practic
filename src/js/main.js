@@ -18,7 +18,6 @@ $(function() {
   });
 });
 
-
 // SLIDER
 $(function() {
   $(".slider").slick({
