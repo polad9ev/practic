@@ -1,0 +1,62 @@
+.infocards
+  padding-top: 100px
+  .wrapper
+    display: flex
+    justify-content: space-between
+  &__card
+    background: $secondary
+    max-width: 370px
+    min-height: 410px
+    margin-right: 30px
+    &:nth-child(1)
+      background: $secondary url('../img/infocards/image-1.png') no-repeat  bottom
+      background-size: contain
+    &:nth-child(2)
+      background: $secondary url('../img/infocards/image-2.png') no-repeat bottom
+      background-size: contain
+    &:nth-child(3)
+      background: $secondary url('../img/infocards/image-3.png') no-repeat bottom
+      background-size: contain
+  &__text
+    +med
+    font-size: 16px
+    padding-left: 25px
+    padding-right: 25px 
+    padding-top: 23px
+    line-height: 23px
+
+@media (min-width: 650px) and (max-width: 1920px)
+  .infocards
+    &__card
+      &:nth-child(3)
+        margin-right: 0 
+@media (max-width: 1199px)
+  .infocards
+    &__container
+      width: 960px
+      margin: 0 auto
+      max-width: 95%
+    &__card
+      // margin: 0 auto
+    &__text
+      font-size: 15px
+@media (max-width: 650px)
+  .infocards
+    padding-top: 60px
+    &__container
+      max-width: 85%
+    .wrapper
+      display: flex
+      flex-direction: column
+    &__card
+      width: 100%
+      min-height: 300px
+      margin: 0 auto
+      margin-bottom: 31px
+      margin-right: none
+    &__text
+      font-size: 12px
+      padding-top: 12px
+      padding-left: 17px
+      padding-right: 50px
+      line-height: 1.5
