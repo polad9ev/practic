@@ -74,8 +74,8 @@ img {
   background-color: #ffd200;
   border: none;
   color: #333333;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 
 .button:hover {
@@ -126,9 +126,10 @@ img {
 
 .input {
   border: 1px solid #dddddd;
+  font-size: 15px;
   color: #999999;
   border-radius: 10px;
-  background: transparent;
+  background: #ffffff;
 }
 
 .input:focus {
@@ -1134,6 +1135,114 @@ img {
   .guarantee .card__image {
     margin-bottom: 25px;
   }
+}
+
+.brif {
+  background-image: url("../img/brif/color-bg.jpg"), url("../img/brif/bg.jpg");
+  background-position: left  center, right center;
+  background-size: 50%, contain;
+  background-repeat: repeat-y ,no-repeat;
+}
+
+.brif-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.brif__interview {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  padding-right: 70px;
+}
+
+.brif__form {
+  display: inline-block;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  padding-left: 200px;
+  text-align: center;
+}
+
+.brif__input {
+  width: 100%;
+  max-width: 370px;
+  padding: 22px 26px;
+}
+
+.brif__input:first-child {
+  margin-bottom: 15px;
+}
+
+.brif__button {
+  margin-top: 30px;
+  width: 100%;
+  max-width: 370px;
+  padding: 26px;
+  margin-bottom: 30px;
+}
+
+.interview__title {
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-size: 22px;
+  line-height: 33px;
+  margin-bottom: 50px;
+}
+
+.interview__subtitle {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 95px;
+}
+
+.interview-list {
+  list-style: none;
+  padding: 0;
+}
+
+.interview-list__item {
+  font-family: 'Museo Sans Bold', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 25px;
+}
+
+.interview-list__counter {
+  display: inline-block;
+  text-align: center;
+  font-size: 14px;
+  line-height: 31px;
+  width: 35px;
+  height: 35px;
+  border: 2px solid #333333;
+  margin-right: 30px;
+  border-radius: 50%;
+}
+
+.interview-list__text {
+  max-width: 400px;
+}
+
+.form__title {
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-size: 22px;
+  line-height: 33px;
+  margin-bottom: 50px;
+}
+
+.form__subtitle {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 95px;
+}
+
+.form__description {
+  display: block;
+  font-size: 15px;
 }
 
 .modal {
