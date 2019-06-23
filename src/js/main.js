@@ -51,52 +51,52 @@ $(function() {
   new WOW().init();
 
   // validate form
-  $(".offer__form").validate({
-    rules: {
-      username: {
-        required: true,
-        minlength: 2
-    },
-      phone: {
-        required: true,
-        minlength: 11
-      }
-    },
-    messages: {
-      username: {
-        required: "", 
-        minlength: ""
-      },
-      phone: {
-        required: "",
-        minlength: "",
-        maxlength: ""
-      },
-    },
-  });
-  $(".brif__formm").validate({
-    rules: {
-      username: {
-        required: true,
-        minlength: 2
-    },
-      phone: {
-        required: true,
-        minlength: 11
-      }
-    },
-    messages: {
-      username: {
-        required: "", 
-        minlength: ""
-      },
-      phone: {
-        required: "",
-        minlength: "",
-        maxlength: ""
-      },
-    },
-  });
+  // $(".offer__form").validate({
+  //   rules: {
+  //     username: {
+  //       required: true,
+  //       minlength: 2
+  //   },
+  //     phone: {
+  //       required: true,
+  //       minlength: 11
+  //     }
+  //   },
+  //   messages: {
+  //     username: {
+  //       required: "", 
+  //       minlength: ""
+  //     },
+  //     phone: {
+  //       required: "",
+  //       minlength: "",
+  //       maxlength: ""
+  //     },
+  //   },
+  // });
+  // $(".brif__formm").validate({
+  //   rules: {
+  //     username: {
+  //       required: true,
+  //       minlength: 2
+  //   },
+  //     phone: {
+  //       required: true,
+  //       minlength: 11
+  //     }
+  //   },
+  //   messages: {
+  //     username: {
+  //       required: "", 
+  //       minlength: ""
+  //     },
+  //     phone: {
+  //       required: "",
+  //       minlength: "",
+  //       maxlength: ""
+  //     },
+  //   },
+  // });
   
   $('.validate-phone').mask("+7 (999) 999-99-99")
 
