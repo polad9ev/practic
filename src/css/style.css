@@ -1356,6 +1356,125 @@ input.error:focus {
   }
 }
 
+.footer {
+  position: relative;
+}
+
+.footer .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer .map {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 50%;
+  height: 100%;
+}
+
+.footer .contacts {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  padding-top: 90px;
+  padding-bottom: 90px;
+  padding-left: 210px;
+}
+
+.footer .contacts__title {
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-size: 24px;
+  line-height: 33px;
+  margin-bottom: 90px;
+  max-width: 320px;
+}
+
+.footer .contacts-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.footer .contacts-list {
+  padding: 0;
+  list-style: none;
+}
+
+.footer .contacts-list__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-bottom: 30px;
+}
+
+.footer .contacts-list__icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 22px;
+}
+
+.footer .contacts-list__text {
+  font-size: 16px;
+  line-height: 26px;
+  max-width: 160px;
+}
+
+@media (max-width: 1199px) {
+  .footer .contacts {
+    padding-left: 100px;
+  }
+  .footer .contacts__title {
+    font-size: 18px;
+    margin-bottom: 50px;
+    line-height: 1.4;
+  }
+  .footer .contacts-list__text {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer .map {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+  }
+  .footer .contacts {
+    padding: 0;
+    padding-top: 65px;
+    padding-bottom: 30px;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .footer .contacts-block {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: auto;
+  }
+  .footer .contacts__title {
+    line-height: 1.2;
+    margin-bottom: 35px;
+  }
+  .footer .contacts-list__icon {
+    margin-right: 10px;
+  }
+  .footer .contacts-list__text {
+    max-width: 100%;
+  }
+}
+
 .modal {
   position: fixed;
   top: 0;
