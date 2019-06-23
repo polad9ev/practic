@@ -399,6 +399,7 @@ input.error:focus {
   text-align: left;
   max-width: 350px;
   margin-bottom: 19px;
+  line-height: 35px;
 }
 
 .offer__subtitle {
