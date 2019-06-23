@@ -11,7 +11,12 @@
   <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/style.css">
 
-  <!-- Yandex.Metrika counter --> <script type="text/javascript" > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js", "ym"); ym(54177901, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, trackHash:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/54177901" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+  <!-- Yandex.Metrika counter -->
+  <script
+    type="text/javascript"> (function (m, e, t, r, i, k, a) { m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) }; m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a) })(window, document, "script", "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js", "ym"); ym(54177901, "init", { clickmap: true, trackLinks: true, accurateTrackBounce: true, trackHash: true }); </script>
+  <noscript>
+    <div><img src="https://mc.yandex.ru/watch/54177901" style="position:absolute; left:-9999px;" alt="" /></div>
+  </noscript> <!-- /Yandex.Metrika counter -->
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
   <title>Ремонт квартир</title>
 </head>
@@ -33,7 +38,8 @@
             <a class="navbar__phone" href="tel: +7(495)42-251-31">+7 (495) 42-251-31</a>
           </div>
 
-          <button class="button navbar__button" id="button" onclick="ym(54177901go, 'reachGoal', 'button'); return true;">Перезвоните мне</button>
+          <button class="button navbar__button" id="button"
+            onclick="ym(54177901go, 'reachGoal', 'button'); return true;">Перезвоните мне</button>
 
         </div>
       </div>
@@ -110,13 +116,9 @@
             бесплатного дизайн-проекта!
           </span>
           <!-- /.section-subtitle offer__subtitle -->
-          <form action="#" id="form" class="form offer__form">
-            <!-- <label for="username">sdsd</label>x
-            <label for="phone"></label> -->
-            <input class="input offer__input validate-name" id="form-username" name="username" type="text"
-              placeholder="Ваше имя">
-            <input class="input offer__input validate-phone" id="form-phone" name="phone" type="tel"
-              placeholder="Ваш телефон">
+          <form action="#" id="form" class="form offer__form" onsubmit="ym(54177901, 'reachGoal', 'filled-form'); return true;">
+            <input class="input offer__input validate-name" id="form-username" name="username" type="text" placeholder="Ваше имя">
+            <input class="input offer__input validate-phone" id="form-phone" name="phone" type="tel" placeholder="Ваш телефон">
             <button type="submit" class="button offer__button">Получить бесплатный дизайн-проект</button>
           </form>
           <div class="note">
