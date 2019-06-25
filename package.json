@@ -1,0 +1,31 @@
+{
+  "name": "practic",
+  "version": "1.0.0",
+  "description": "Практика вёрстки",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/polad9ev/practic.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/polad9ev/practic/issues"
+  },
+  "homepage": "https://github.com/polad9ev/practic#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-js-minify": "0.0.3",
+    "gulp-minify": "^3.1.0",
+    "gulp-uglify": "^3.0.2"
+  },
+  "dependencies": {
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-tinypng-compress": "^1.2.5"
+  }
+}
